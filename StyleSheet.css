@@ -19,11 +19,20 @@ footer{
     font-family: palatino;
     text-decoration: none;
     padding: 1% 5% 1%;
+    height: 15px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+body{
+  margin-bottom: 15px;
+  padding: 0% 0% 3%;
 }
 
 header{
     background-color: #3E8EDE;
-    margin: 0 0 0 0;
 }
 
 page-container{
