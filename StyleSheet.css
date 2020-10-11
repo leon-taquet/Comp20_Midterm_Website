@@ -59,6 +59,14 @@ nav {
     padding: 1% 2% 1% 2%;
 }
 
+a.species-link{
+  color: #000;
+  font-size: 40px
+  font-family: palatino;
+  text-decoration: none;
+  padding: 1% 2% 1% 2%;
+}
+
 
 .nav{
     text-decoration: none;
@@ -69,5 +77,9 @@ nav {
 }
 
 .nav:hover{
+    color: #FFD700;
+}
+
+.species-link:hover{
     color: #FFD700;
 }
