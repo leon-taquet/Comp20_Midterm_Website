@@ -1,0 +1,15 @@
+/**************
+* StyleSheet.css
+* Author: Julia McDowell, HTeamML;
+* Comp20 Fall 2020 Midterm
+**************/
+
+/* nav bar */
+
+
+/* footer */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
