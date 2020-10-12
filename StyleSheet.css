@@ -4,7 +4,80 @@
 * Comp20 Fall 2020 Midterm
 **************/
 
+
+/* header */
+header{
+    background-color: #3E8EDE;
+}
+
+
 /* nav bar */
+nav {
+    background-color: #778899;
+    display:inline_block;
+    font-size: 20px;
+    font-family: palatino;
+    text-decoration: none;
+    padding: 1% 2% 1% 5%;
+}
+
+nav a {
+    display: inline_block;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 1% 2% 1% 5%;
+    font-size: 80%;
+    font-family: palatino;
+}
+
+nav a:hover{
+    color: #FFD700;
+}
+
+nav a.currpage {
+    color:black;
+}
+
+
+
+
+
+
+body{
+  margin-bottom: 15px;
+  padding: 0% 0% 3%;
+}
+
+
+page-container{
+    position: relative;
+    min-height: 100%;
+    max-height: 150%;
+}
+
+a.logo {
+    text-decoration: none;
+  }
+
+#logo {
+    Width: 25%;
+    padding: 10px;
+}
+
+
+
+a.species-link{
+  color: #000;
+  font-size: 40px
+  font-family: palatino;
+  text-decoration: none;
+  padding: 1% 2% 1% 2%;
+}
+
+
+.species-link:hover{
+    color: #FFD700;
+}
 
 
 /* footer */
@@ -24,62 +97,4 @@ footer{
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
-}
-
-body{
-  margin-bottom: 15px;
-  padding: 0% 0% 3%;
-}
-
-header{
-    background-color: #3E8EDE;
-}
-
-page-container{
-    position: relative;
-    min-height: 100%;
-    max-height: 150%;
-}
-
-a.logo {
-    text-decoration: none;
-  }
-
-#logo {
-    Width: 25%;
-    padding: 10px;
-}
-
-nav {
-    background-color: #778899;
-    display:inline_block;
-    font-size: 20px;
-    font-family: palatino;
-    text-decoration: none;
-    padding: 1% 2% 1% 2%;
-}
-
-a.species-link{
-  color: #000;
-  font-size: 40px
-  font-family: palatino;
-  text-decoration: none;
-  padding: 1% 2% 1% 2%;
-}
-
-
-.nav{
-    text-decoration: none;
-    color: #FFFFFF;
-    padding: 2% 1% 2% 5%;
-    font-size: 80%;
-    font-family: palatino;
-}
-
-.nav:hover{
-    color: #FFD700;
-}
-
-.species-link:hover{
-    color: #FFD700;
 }
