@@ -4,9 +4,43 @@ Comp20 Fall 2020 Midterm  -->
 
 <html>
 <head>
-    <title>Barnum Humane Society</title>
+    <title>Foster Page</title>
+    <meta charset="utf-8">
+    <title>Adopt Page</title>
     <link rel="stylesheet" href="StyleSheet.css">
-    <style></style>
+    <style>
+    table {width:100%}
+    td {text-align: center}
+    img.animal {padding: 20px}
+    </style>
+    <script type="text/javascript">
+        window.onload = function ()
+        {
+            butn = document.getElementById("submit");
+            msg = document.getElementById("submit-msg")
+            butn.onclick = function ()
+            {
+                msg.innerHTML = "<center > Thank you! We will be in touch soon! </center> ";
+                document.getElementById("name").value = "";
+                document.getElementById("age").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("city").value = "";
+                document.getElementById("foster-animal").value = "";
+                document.getElementById("date").valueAsDate = null;
+                var animals = document.getElementsByName("animals");
+                for(var i=0;i<animals.length;i++)
+                    {
+                        animals[i].checked = false;
+                    }
+                var fostering = document.getElementsByName("fostering");
+                for(var i=0;i<fostering.length;i++)
+                    {
+                        fostering[i].checked = false;
+                    }
+
+            }
+        }
+    </script>
 </head>
 
 <header> <center> <a class = "logo" href="index.html"> <img id = "logo" src="LittleLogo.png"> </a> </center> </header>
@@ -23,7 +57,124 @@ Comp20 Fall 2020 Midterm  -->
 </nav>
 
 <body>
+<h1>Foster</h1>
+<h3>A fantastic way to get involved with the Barnum Humane Society is to volunteer
+    some of your time and your home to caring for foster animals that are not yet
+    ready to be adopted. Fostering frees up space in the facility so that we
+    can save even more animals.  <br/>  <br/>
+    If you see a foster animal below that you would like to house, please sign
+    up at the bottom of the page.
+</h3>
+<table>
+    <tr>
+        <td> <img class = "animal" style="width:35%" src="Foster Animal Images/cat_fosters/cat1.jpg">
+            <br>
+            <div style="color: #3E8EDE; font-family= Georgia "> <b> Juice </b> </div>
+            American Shorthair <br/>
+            5 months old Female
+        </td>
+        <td> <img class = "animal" style="width:35%" src="Foster Animal Images/cat_fosters/cat2.jpg">
+            <br>
+            <div style="color: #3E8EDE; font-family= Georgia "> <b> Pumpkin </b> </div>
+            Tabby <br/>
+            9 month old Male
+        </td>
+    </tr>
+    <tr>
+        <td> <img class = "animal" style="width:35%" src="Foster Animal Images/cat_fosters/cat3.jpg">
+            <br>
+            <div style="color: #3E8EDE; font-family= Georgia "> <b> Ginger </b> </div>
+            Tabby <br/>
+            2 month old Female
+        </td>
+        <td> <img class = "animal" style="width:35%" src="Foster Animal Images/cat_fosters/cat4.jpg">
+            <br>
+            <div style="color: #3E8EDE; font-family= Georgia "> <b> Kebab </b> </div>
+            American Shorthair <br/>
+            4 month old Female <br/> &nbsp;
+        </td>
+    </tr>
 
+    <tr>
+        <td> <img style="width:35%" src="Foster Animal Images/dog_fosters/dog1.jpg">
+            <br>
+            <div style="color: #3E8EDE; font-family= Georgia "> <b> Spot </b> </div>
+            Mix <br/>
+            8 month old Male <br/> &nbsp;
+        </td>
+        <td> <img style="width:35%" src="Foster Animal Images/dog_fosters/dog2.jpg">
+            <br>
+            <div style="color: #3E8EDE; font-family= Georgia "> <b> Rex </b> </div>
+            Pitbull Mix <br/>
+            2 year old Male <br/> &nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td> <img style="width:35%" src="Foster Animal Images/dog_fosters/dog3.jpg">
+            <br>
+            <div style="color: #3E8EDE; font-family= Georgia "> <b> Lucy </b> </div>
+            Labrador Mix <br/>
+            4 year old Female <br/> &nbsp;
+        </td>
+        <td> <img style="width:35%" src="Foster Animal Images/dog_fosters/dog4.jpg">
+            <br>
+            <div style="color: #3E8EDE; font-family= Georgia "> <b> Robin </b> </div>
+            Beagle Mix <br/>
+            1 year old Male <br/> &nbsp;
+        </td>
+    </tr>
+</table>
+
+    <br/>
+
+
+    <center>
+    <h2>Foster Sign Ups!</h2>
+    <div style = "border-style: groove; width: 50%;">
+        <table>
+            <tr>
+                <td style = "text-align: right" >Foster Parent's Name:</td>
+                <td style = "text-align: left"> <input type="text" id="name" value=""></td>
+            </tr>
+            <tr>
+                <td style = "text-align: right" >Age:</td>
+                <td style = "text-align: left"> <input type="text" id="age" value=""></td>
+            </tr>
+            <tr>
+                <td style = "text-align: right" >Email:</td>
+                <td style = "text-align: left"> <input type="text" id = "email" value=""></td>
+            </tr>
+            <tr>
+                <td style = "text-align: right" >Current City of Residence:</td>
+                <td style = "text-align: left"> <input type="text" id="city" value=""></td>
+            </tr>
+            <tr>
+                <td style = "text-align: right" >Do you have other animals?</td>
+                <td style = "text-align: left"> &nbsp; Yes <input type="radio" name="animals" value="Yes"> No <input type="radio" name="animals" value="No"> </td>
+            </tr>
+            <tr>
+                <td style = "text-align: right" >Is this your first time fostering?</td>
+                <td style = "text-align: left"> &nbsp; Yes <input type="radio" name="fostering" value="Yes"> No <input type="radio" name="fostering" value="No"> </td>
+            </tr>
+            <tr>
+                <td style = "text-align: right" >Which lucky foster are you choosing?: </td>
+                <td style = "text-align: left"> <input type="text" id="foster-animal" value=""></td>
+            </tr>
+            <tr>
+                <td style = "text-align: right" >How soon can you pick them up?: </td>
+                <td style = "text-align: left"> <input type="date" id="date" value=""></td>
+            </tr>
+            <tr>
+                <td style = "text-align: right" ><input type="button" id = "submit" value="Submit"></td>
+            </tr>
+        </table>
+    </div>
+    </center>
+
+    <div id="submit-msg">
+        &nbsp;
+    </div>
+    <br/><br/><br/>
 
 
 </body>
