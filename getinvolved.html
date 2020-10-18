@@ -16,17 +16,21 @@ Comp20 Fall 2020 Midterm  -->
           .mobileHide {display: none;}
     </style>
     <script type="text/javascript">
-        dropdown = document.getElementById("dropdown");
-        dropdown_links = document.getElementById("dropdown-links");
-        dropdown.onclick = function ()
+        window.onload = function ()
         {
-            if (dropdown_links.style.display == "block"){
-                dropdown_links.style.display = "none"
+            dropdown = document.getElementById("dropdown");
+            dropdown_links = document.getElementById("dropdown-links");
+            dropdown.onclick = function ()
+            {
+                if (dropdown_links.style.display == "block"){
+                    dropdown_links.style.display = "none"
+                }
+                else{
+                    dropdown_links.style.display = "block"
+                }
+                return false;
             }
-            else{
-                dropdown_links.style.display = "block"
-            }
-            return false;
+        }
     </script>
 </head>
 
@@ -40,7 +44,7 @@ Comp20 Fall 2020 Midterm  -->
     </right>
     <!-- Mobile -->
     <center>
-        <div class = mobileHide>
+        <div class = "mobileHide">
             <a href="index.html"> Home </a>
             <a href="about.html"> About Us </a>
             <a href="adopt.html"> Adopt </a>
