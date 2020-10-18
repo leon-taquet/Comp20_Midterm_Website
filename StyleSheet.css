@@ -21,6 +21,8 @@ nav {
     padding: 1% 2% 1% 5%;
 }
 
+#mobileHide {display: inline;}
+
 #dropdown {
     display: none;
 }
