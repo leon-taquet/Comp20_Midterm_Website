@@ -20,7 +20,7 @@ Comp20 Fall 2020 Midterm  -->
     and (min-device-width : 320px)
     and (max-device-width : 480px){
       #dropdown {display: inline;}
-      #mobileHide {display: none;}
+      .mobileHide {display: none;}
 
   }
     </style>
@@ -76,14 +76,17 @@ Comp20 Fall 2020 Midterm  -->
     </right>
     <!-- Mobile -->
     <center>
-    <a class = "mobileHide" href="index.html"> Home </a>
-    <a class = "mobileHide" href="about.html"> About Us </a>
-    <a class = "mobileHide" href="adopt.html"> Adopt </a>
-    <a class = "mobileHide" href="foster.html" class="currpage"> Foster </a>
-    <a class = "mobileHide" href="animalaid.html"> Animal Aid </a>
-    <a class = "mobileHide" href="getinvolved.html"> Get Involved </a>
-    <a class = "mobileHide" href="contact.html"> Contact Us </a>
+        <div class = mobileHide>
+            <a href="index.html"> Home </a>
+            <a href="about.html"> About Us </a>
+            <a href="adopt.html"> Adopt </a>
+            <a href="foster.html" class="currpage"> Foster </a>
+            <a href="animalaid.html"> Animal Aid </a>
+            <a href="getinvolved.html"> Get Involved </a>
+            <a href="contact.html"> Contact Us </a>
+        </div>
     </center>
+
 </nav>
 
 <body>
