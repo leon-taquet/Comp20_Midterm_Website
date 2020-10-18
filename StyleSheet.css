@@ -21,6 +21,25 @@ nav {
     padding: 1% 2% 1% 5%;
 }
 
+#dropdown {
+    display: none;
+}
+
+#dropdown-links{
+            display: none;
+            width: 40%
+}
+
+#dropdown-links a{
+        background-color: #778899;
+        color: #FFF;
+        display: block;
+        font-size: 20px;
+        font-family: palatino;
+        text-decoration: none;
+        padding: 1% 2% 5% 5%;
+}
+
 nav a {
     display: inline_block;
     text-decoration: none;

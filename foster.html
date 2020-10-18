@@ -7,11 +7,22 @@ Comp20 Fall 2020 Midterm  -->
     <title>Foster Page</title>
     <meta charset="utf-8">
     <title>Adopt Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="StyleSheet.css">
     <style>
     table {width:100%}
     td {text-align: center}
     img.animal {padding: 20px}
+
+
+  /* Smartphone Portrait and Landscape */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){
+      #dropdown {display: inline;}
+      #mobileHide {display: none;}
+
+  }
     </style>
     <script type="text/javascript">
         window.onload = function ()
@@ -39,13 +50,46 @@ Comp20 Fall 2020 Midterm  -->
                     }
 
             }
+            dropdown = document.getElementById("dropdown");
+            dropdown_links = document.getElementById("dropdown-links");
+            dropdown.onclick = function ()
+            {
+                if (dropdown_links.style.display == "block"){
+                    dropdown_links.style.display = "none"
+                }
+                else{
+                    dropdown_links.style.display = "block"
+                }
+                return false;
+            }
         }
     </script>
 </head>
 
 <header> <center> <a class = "logo" href="index.html"> <img id = "logo" src="LittleLogo.png"> </a> </center> </header>
 <nav>
+    <!-- Mobile -->
+    <right>
+        <a id = "dropdown">
+            <i class = "fa fa-bars"></i>
+        </a>
+    </right>
+    <!-- Mobile -->
     <center>
+    <a class = "mobileHide" href="index.html"> Home </a>
+    <a class = "mobileHide" href="about.html"> About Us </a>
+    <a class = "mobileHide" href="adopt.html"> Adopt </a>
+    <a class = "mobileHide" href="foster.html" class="currpage"> Foster </a>
+    <a class = "mobileHide" href="animalaid.html"> Animal Aid </a>
+    <a class = "mobileHide" href="getinvolved.html"> Get Involved </a>
+    <a class = "mobileHide" href="contact.html"> Contact Us </a>
+    </center>
+</nav>
+
+<body>
+
+    <!-- Mobile -->
+<div id = "dropdown-links" class="dropdown-links">
     <a href="index.html"> Home </a>
     <a href="about.html"> About Us </a>
     <a href="adopt.html"> Adopt </a>
@@ -53,10 +97,9 @@ Comp20 Fall 2020 Midterm  -->
     <a href="animalaid.html"> Animal Aid </a>
     <a href="getinvolved.html"> Get Involved </a>
     <a href="contact.html"> Contact Us </a>
-    </center>
-</nav>
+</div>
+    <!-- Mobile -->
 
-<body>
 <h1>Foster</h1>
 <h3>A fantastic way to get involved with the Barnum Humane Society is to volunteer
     your time and your home to caring for foster animals that are not yet
