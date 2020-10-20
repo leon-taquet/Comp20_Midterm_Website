@@ -143,6 +143,24 @@ a.species-link{
 
 /*END*/
 
+/*CAT/DOG TABLES*/
+img.animal {
+    width: 50%;
+    overflow: hidden;
+    border: 1px black solid;
+    background-color: black;
+
+}
+
+.animals td {
+    border-style: ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.animals td div {
+    font-size: 30px;
+}
 
 /**/
 
