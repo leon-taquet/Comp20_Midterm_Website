@@ -75,6 +75,25 @@ page-container{
     min-height: 100%;
     max-height: 150%;
 }
+/*ABOUT PAGE*/
+.about_contain {
+    background-color: #778899;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.about_inside {
+    margin: 0 auto;
+    padding: 6px 16px;
+    background-color: #E6E6E6;
+
+}
 
 a.logo {
     text-decoration: none;
@@ -85,6 +104,11 @@ a.logo {
     padding: 10px;
 }
 
+h1 {
+    text-align: center;
+    font-family: Impact;
+    font-size: 45px;
+}
 
 
 a.species-link{
