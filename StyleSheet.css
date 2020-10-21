@@ -10,7 +10,6 @@ header{
     background-color: #3E8EDE;
 }
 
-
 /* nav bar */
 nav {
     background-color: #778899;
@@ -18,7 +17,7 @@ nav {
     font-size: 20px;
     font-family: palatino;
     text-decoration: none;
-    padding: 1% 2% 1% 5%;
+    padding: 1% 2% 1% 1%;
 }
 
 .mobileHide {display: inline;}
@@ -34,7 +33,7 @@ nav {
 
 #dropdown-links a{
         background-color: #778899;
-        color: #FFF;
+        color: #FFFFFF;
         display: block;
         font-size: 20px;
         font-family: palatino;
@@ -59,16 +58,10 @@ nav a.currpage {
     color:black;
 }
 
-
-
-
-
-
 body{
   margin-bottom: 15px;
   padding: 0% 0% 3%;
 }
-
 
 page-container{
     position: relative;
@@ -76,10 +69,11 @@ page-container{
     max-height: 150%;
 }
 
+<<<<<<< Updated upstream
 /*HOME PAGE*/
 .parallax{
 	background-image: url("Foster Animal Images/shelter.jpg");
-	
+
 	min-height: 500px
 	position: relative;
 	background-attachment: fixed;
@@ -88,6 +82,8 @@ page-container{
 	background-size: cover;
 }
 
+=======
+>>>>>>> Stashed changes
 /*ABOUT PAGE*/
 .about_contain {
     background-color: #778899;
@@ -105,10 +101,7 @@ page-container{
     margin: 0 auto;
     padding: 6px 16px;
     background-color: #E6E6E6;
-
 }
-
-
 
 /*ADOPT PAGES*/
 .catdogbut {
@@ -120,7 +113,6 @@ page-container{
 .catdogbuttd {
     margin: 0 auto;
     text-align: center;
-
 }
 
 .animal_portal {
@@ -135,7 +127,6 @@ page-container{
     padding: 4% 4% 4% 4%;
 }
 
-
 .aportal_cont {
     padding: 10px 20px;
     text-align: center
@@ -148,7 +139,6 @@ a.species-link{
   text-decoration: none;
   padding: 4% 4% 4% 4%;
 }
-
 
 .species-link:hover{
     color: #778899;
@@ -164,23 +154,19 @@ img.animal {
     background-color: black;
 
 }
-
 .animals td {
     border-style: ;
     padding-top: 30px;
     padding-bottom: 30px;
-
 }
 .animals td div {
     font-size: 30px;
 }
 
-/**/
-
+/*Logo*/
 a.logo {
     text-decoration: none;
   }
-
 #logo {
     Width: 20%;
     padding: 10px;
@@ -191,13 +177,9 @@ h1 {
     font-family: Impact;
     font-size: 48px;
 }
-
 h2 {
     text-align: center;
 }
-
-
-
 
 /* FOOTER */
 footer{
@@ -207,11 +189,11 @@ footer{
     background-color: #778899;
     color: #FFFFFF;
     display:inline_block;
-    font-size: 13px;
+    font-size: 15px;
     font-family: palatino;
     text-decoration: none;
     padding: 1% 5% 1%;
-    height: 15px;
+    height: 20px;
     bottom: 0px;
     left: 0px;
     right: 0px;
