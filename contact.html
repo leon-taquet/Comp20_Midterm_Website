@@ -1,40 +1,59 @@
 <!-- contact.html
-Author: Julia McDowell, HTeamML
+Author: Julia McDowell, Kateri Lalicker, HTeamML
 Comp20 Fall 2020 Midterm  -->
-
 <html>
 <head>
-    <title>Barnum Humane Society</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="StyleSheet.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <style>
-        @media only screen
-        and (min-device-width : 320px)
-        and (max-device-width : 480px){
-          #dropdown {display: inline;}
-          .mobileHide {display: none;}
-    </style>
-    <script type="text/javascript">
-        window.onload = function ()
-        {
-            dropdown = document.getElementById("dropdown");
-            dropdown_links = document.getElementById("dropdown-links");
-            dropdown.onclick = function ()
-            {
-                if (dropdown_links.style.display == "block"){
-                    dropdown_links.style.display = "none"
-                }
-                else{
-                    dropdown_links.style.display = "block"
-                }
-                return false;
-            }
+<title>Barnum Humane Society</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="StyleSheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+    p {font-family:palatino;
+        font-size:20px;
+        margin-left:3%;
+        margin-right:3%;
+    }
+    h2 {font-family:palatino;
+        font-size:25px;
+    }
+    h3 {font-family:palatino;
+        font-size:23px;
+        margin:1%;
+        margin-left:3%
+    }
+    h4 {font-family:palatino;
+        font-size:20px;
+        margin:1%;
+        margin-left:3%;
+    }
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){
+      #dropdown {display: inline;}
+      .mobileHide {display: none;}
+</style>
+<script type="text/javascript">
+window.onload = function ()
+{
+    dropdown = document.getElementById("dropdown");
+    dropdown_links = document.getElementById("dropdown-links");
+    dropdown.onclick = function ()
+    {
+        if (dropdown_links.style.display == "block"){
+            dropdown_links.style.display = "none"
         }
-    </script>
+        else{
+            dropdown_links.style.display = "block"
+        }
+        return false;
+    }
+}
+</script>
 </head>
-
-<header> <center> <a class = "logo" href="index.html"> <img id = "logo" src="LittleLogo.png"> </a> </center> </header>
+<header>
+    <a class = "logo" href="index.html"> <img id = "logo" src="LittleLogoB.png">
+    </a><h1 style="text-align:left">The <br>Barnum <br>Humane <br>Society</h1>
+</header>
 <nav>
     <!-- Mobile -->
     <right>
@@ -70,15 +89,44 @@ Comp20 Fall 2020 Midterm  -->
     <a href="contact.html"> Contact Us </a>
 </div>
     <!-- Mobile -->
-
-
-
+<h2>Get in Touch!</h2>
+<h4 style="text-align:center; margin-left:0%">Address: 419 Boston Ave. Medford, MA 02155 <br>
+Email: ContactSupport@bhs.org <br>
+Phone: 1-800-HUM-ANE</h4>
+<h2 style="text-align:left; margin-left:3%; font-style:italic">Meet the Team</h2>
+<h3>Leon Tacquet</h3>
+<h4>Animal Shelter Ringleader</h4>
+<p>Current head of management of the Barnum Humane
+Society, Leon has a love for all animals big and small. Have a question about
+any of our foster animals, adoptees, or rescue missions? Or maybe you just
+want to get to know the whole team a little better! Contact Leon right
+away!</p>
+<h3>Julia Dowell</h3>
+<h4>Head Animal Center:</h4>
+<p>Looking to foster an animal? Have any questions about
+what caring for a pet might entail or how we care for our own animals here
+at the shelter? Please contact Julia for anything from how to change kitty
+litter to bridle maintainence for the horses!</p>
+<img style="width:15%; float:left; padding:20px" src="Kateri.jpg" alt="IT Director">
+<h3>Kateri Lalicker</h3>
+<h4>IT Director:</h4>
+<p>Fifth time the website has crashed on you? Having any difficulties
+opening the website on mobile or filling out the donation form? Please
+contact Kateri for all technical malfunctions or problems that may occur as
+you browse our lovely website!</p>
+<h3>William Huang</h3>
+<h4>Financial Director:</h4>
+<p>Wondering how your generous donations are being spent?
+Have questions about any of our practices or operations? Ask William! Our
+humane society is a nonprofit, and cannot function without all of the
+donations provided by our caring patrons, supporters, and volunteers. So please
+come with any and all monetary concerns regarding any of our finances!</p>
 </body>
 
 <footer>
     Barnum Humane Society &emsp;
-    Address &emsp;
-    Phone Number
+    419 Boston Ave. Medford, MA &emsp;
+    1-800-HUM-ANE
 </footer>
 
 </html>
