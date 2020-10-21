@@ -32,31 +32,43 @@ Comp20 Fall 2020 Midterm -->
       .mobileHide {display: none;}
 </style>
 <script type="text/javascript">
+moneyList = ["$1", "$2","$5","$10","$20","$50"];
+function donateMsg()
+{
+    name = document.forms[0].name.value;
+    donation = "";
+    for (i = 0; i < moneyList.length; i++)
+    {
+        with(document.forms[0])
+        {
+            if (amount[i].checked)
+            {
+                donation = amount[i].value;
+                break;
+            }
+        }
+    }
+    if (donation == "")
+        donation = "$" +  document.forms[0].money.value;
+    alert ("Thank you, " + name + ", for your generous " + donation +
+        " donation! You can expect a call from us in 1-3 business days on" +
+        " a secure line where we will ask for payment details.");
+}
 function validate()
 {
     err = false;
     document.getElementById("errName").style.display = "none";
-    document.getElementById("errMoney").style.display = "none";
     with (document.contact)
     {
         if (name.value=="")
         {
             document.getElementById("errName").style.display = "inline";
             name.focus();
-            err=true;
-        }
-        if (money.value=="")
-        {
-            document.getElementById("errMoney").style.display = "inline";
-            money.focus();
-            err=true;
-        }
-        else {
-            alert("Thank you so much for your generous donation!" +
-                " You can expect a call from us in 1-3 business days on" +
-                " a secure line where we will ask for payment details.")
+            err = true;
+            return false;
         }
     }
+    donateMsg();
     return !err;
 }
 window.onload = function ()
@@ -77,7 +89,7 @@ window.onload = function ()
 </script>
 </head>
 <header>
-    <a class = "logo" href="index.html"> <img id = "logo" src="FinalLogo.jpg">
+    <a class = "logo" href="index.html"> <img id="logo" src="FinalLogo.jpg">
 </header>
 <nav>
     <!-- Mobile -->
@@ -130,17 +142,28 @@ safety and wellbeing of our animals.</h4>
     <p>Phone Number (Other): <input type="text" name="phone"
         value=""></p>
     <p>How much would you like to donate?</p>
-    <p>Please enter an amount in USD: $<input type="text" name="money" value=""></p>
-    <div id="errMoney" class="errMsg">Please enter an amount!</div>
+    <script language="javascript">
+	for (i = 0; i < moneyList.length; i++)
+	{
+		document.write ('&emsp;' + moneyList[i] +
+            ':<input type="radio" name="amount" id="chk' + (i+1) + '" value="'
+            + moneyList[i] + '">');
+	}
+	</script>
+    <p>Or enter an amount in USD: $<input type="text" name="money" value="">
+    </p>
     <p>Is this a weekly, monthly, yearly, or one-time payment?</p>
-    <p>Weekly: <input type="radio" name="week">
-    Monthly: <input type="radio" name="month">
-    Yearly: <input type="radio" name="year">
-    One-Time: <input type="radio" name="once"></p>
-    <p>Do have any special comments or suggestions that you would like us to know?</p>
-    <input style="padding-bottom: 100px; padding-right: 50%" type="text" value="">
+    <p>Weekly: <input type="radio" name="time">
+    Monthly: <input type="radio" name="time">
+    Yearly: <input type="radio" name="time">
+    One-Time: <input type="radio" name="time"></p>
+    <p>Do have any special comments or suggestions that you would like us to
+        know?</p>
+    <input style="padding-bottom: 100px; padding-right: 50%" type="text"
+        value="">
     <br>&nbsp;<br>
-    <input style="padding:10px" type="submit" value= "Submit Donation Form">
+    <input style="padding:10px" type="submit" id="submit"
+        value="Submit Donation Form">
     </form>
 </body>
 
