@@ -70,17 +70,7 @@ page-container{
 }
 
 <<<<<<< Updated upstream
-/*HOME PAGE*/
-.parallax{
-	background-image: url("Foster Animal Images/shelter.jpg");
 
-	min-height: 500px;
-	position: relative;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
 
 =======
 >>>>>>> Stashed changes
