@@ -18,6 +18,7 @@ Comp20 Fall 2020 Midterm -->
     input {padding:2px}
     p {padding:3px;
         font-size:17px;
+        margin-left:7%;
     }
 
     @media only screen
@@ -120,6 +121,18 @@ window.onload = function ()
 <h1>Get Involved</h1>
 <div class = "about_contain">
     <div class= "about_inside">
+<h3>Your time is just as valuable to us as your money!<br>The Barnum Humane
+Society understands that not everyone can contribute in the same way, and wants
+you to know that even if you don't wish to donate, you can still help us make a
+difference in the lives of pets everywhere by volunteering your time and
+assistance instead. <br>Volunteer applications are available at all of our pet
+shelter and rescue locations.<br>Please speak with an associate to begin changing
+the lives of animals today!</h3>
+</div>
+</div>
+<h1>Donate Today</h1>
+<div class = "about_contain">
+    <div class= "about_inside">
 <h3>Please give now to help animals in need!<br>Your contributions help us do
 everything from aiding animal rescue missions to buying food and supplies
 for all of our resident adoptees!<br>Every cent is dedicated to protecting the
@@ -142,6 +155,10 @@ safety and wellbeing of our animals.</h3>
     <script language="javascript">
 	for (i = 0; i < moneyList.length; i++)
 	{
+        if (i == 0)
+        {
+            document.write('&emsp;&emsp;&emsp;&emsp;&nbsp;');
+        }
 		document.write ('&emsp;' + moneyList[i] +
             ':<input type="radio" name="amount" id="chk' + (i+1) + '" value="'
             + moneyList[i] + '">');
@@ -156,10 +173,10 @@ safety and wellbeing of our animals.</h3>
     One-Time: <input type="radio" name="time"></p>
     <p>Do have any special comments or suggestions that you would like us to
         know?</p>
-    <input style="padding-bottom: 100px; padding-right: 50%" type="text"
+    <input style="margin-left:7%; padding-bottom:100px; padding-right:50%" type="text"
         value="">
     <br>&nbsp;<br>
-    <input style="padding:10px" type="submit" id="submit"
+    <input style="padding:10px; margin-left:7%" type="submit" id="submit"
         value="Submit Donation Form">
     </form>
 </body>
