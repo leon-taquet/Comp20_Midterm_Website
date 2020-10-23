@@ -74,7 +74,7 @@ page-container{
 .parallax{
 	background-image: url("Foster Animal Images/shelter.jpg");
 
-	min-height: 500px
+	min-height: 500px;
 	position: relative;
 	background-attachment: fixed;
 	background-position: center;
