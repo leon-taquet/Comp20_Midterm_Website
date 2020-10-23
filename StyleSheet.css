@@ -69,15 +69,11 @@ page-container{
     max-height: 150%;
 }
 
-<<<<<<< Updated upstream
 
-
-=======
->>>>>>> Stashed changes
 /*ABOUT PAGE*/
 .about_contain {
     background-color: #778899;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 8px 4px rgba(62, 142, 222, 1);
     width: 80%;
     margin: 0 auto;
     margin-top: 15px;
