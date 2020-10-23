@@ -1,12 +1,16 @@
 <!-- animalaid.html
 Author: Julia McDowell, HTeamML
 Comp20 Fall 2020 Midterm  -->
-
+<!DOCTYPE html>
 <html>
 <head>
     <title>Barnum Humane Society</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script   src="http://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="StyleSheet.css">
     <style>
         @media only screen
@@ -16,6 +20,7 @@ Comp20 Fall 2020 Midterm  -->
           .mobileHide {display: none;}
     </style>
     <script type="text/javascript">
+
         window.onload = function ()
         {
             dropdown = document.getElementById("dropdown");
@@ -31,10 +36,19 @@ Comp20 Fall 2020 Midterm  -->
                 return false;
             }
         }
+
+        $(document).ready (function()
+        {
+            $("#submit").click (function ()
+            {
+                $(".form1").slideToggle(1000);
+                $(".thanks").html("Thank you for your support! We will call to confirm your request shortly.");
+            })
+        })
     </script>
 </head>
 
-<header> <center> <a class = "logo" href="index.html"> <img id = "logo" src="LittleLogo.png"> </a> </center> </header>
+<header> <center> <a class = "logo" href="index.html"> <img id = "logo" src="FinalLogo.png"> </a> </center> </header>
 <nav>
     <!-- Mobile -->
     <right>
@@ -86,7 +100,13 @@ Comp20 Fall 2020 Midterm  -->
           <td> <img class = "mobileHide" style = "width: 600px; height: 400px"
                 src="Foster Animal Images/support.jpg" alt=""> </td>
           <td style = "text-align: left">
+
+                <div class="thanks" style = "width: 75%">
+                    &nbsp;
+                </div>
+                <form class = "form1" >
                 <table>
+
                     <tr>
                         <td style = "text-align: right" > Name:</td>
                         <td style = "text-align: left"> <input type="text" id="name" value=""></td>
@@ -111,8 +131,7 @@ Comp20 Fall 2020 Midterm  -->
                         <td style = "text-align: right" ><input type="button" id = "submit" value="Submit"></td>
                     </tr>
                 </table>
-
-
+                </form>
 
           </td>
       </tr>
@@ -124,8 +143,8 @@ Comp20 Fall 2020 Midterm  -->
 
 <footer>
     Barnum Humane Society &emsp;
-    Address &emsp;
-    Phone Number
+    419 Boston Ave. Medford, MA &emsp;
+    1-800-HUM-ANE
 </footer>
 
 </html>
