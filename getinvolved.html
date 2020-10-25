@@ -13,6 +13,7 @@ Comp20 Fall 2020 Midterm -->
         border: solid 1px #d20e11;
         display:none;
         padding: 1px 15px;
+        margin-left:7%;
     }
     form {padding-left:4%}
     input {padding:2px}
@@ -54,12 +55,20 @@ function validate()
 {
     err = false;
     document.getElementById("errName").style.display = "none";
+    document.getElementById("errEmail").style.display = "none";
     with (document.contact)
     {
         if (name.value=="")
         {
             document.getElementById("errName").style.display = "inline";
             name.focus();
+            err = true;
+            return false;
+        }
+        if (email.value=="")
+        {
+            document.getElementById("errEmail").style.display = "inline";
+            email.focus();
             err = true;
             return false;
         }
@@ -145,6 +154,7 @@ safety and wellbeing of our animals.</h3>
     <p>Would you like this donation to remain anonymous?
     <input type="checkbox" name="anon"></p>
     <p>Email: <input type="text" name="email" value=""></p>
+    <div id="errEmail" class="errMsg">Please give us a valid email!</div>
     <p>Phone Number (Home): <input type="text" name="phone"
         value=""></p>
     <p>Phone Number (Work): <input type="text" name="phone"
