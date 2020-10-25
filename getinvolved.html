@@ -63,17 +63,16 @@ function validate()
             document.getElementById("errName").style.display = "inline";
             name.focus();
             err = true;
-            return false;
         }
         if (email.value=="")
         {
             document.getElementById("errEmail").style.display = "inline";
             email.focus();
             err = true;
-            return false;
         }
     }
-    donateMsg();
+    if (!err)
+        donateMsg();
     return !err;
 }
 window.onload = function ()
