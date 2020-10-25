@@ -4,61 +4,62 @@ Comp20 Fall 2020 Midterm  -->
 <!DOCTYPE html>
 <html>
 <head>
-<title>Barnum Humane Society</title>
-<link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="StyleSheet.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<style>
-    p {font-family:palatino;
-        font-size:20px;
-        text-align:justify;
-        margin-left:10%;
-        margin-right:10%;
-    }
-    h2 {text-align:center;
-        font-family:Impact;
-        font-size:40px;
-    }
-    h3 {font-family:palatino;
-        font-size:23px;
-        margin:1%;
-        margin-left:10%;
-        margin-right:10%;
-    }
-    h4 {font-family:palatino;
-        font-size:20px;
-        margin:1%;
-        margin-left:10%;
-        margin-right:10%;
-    }
+    <title>Barnum Humane Society</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="StyleSheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="foster, adopt, animals, humane society, animal aid, cats, dogs">
+    <style>
+        p {font-family:palatino;
+            font-size:20px;
+            text-align:justify;
+            margin-left:10%;
+            margin-right:10%;
+        }
+        h2 {text-align:center;
+            font-family:Impact;
+            font-size:40px;
+        }
+        h3 {font-family:palatino;
+            font-size:23px;
+            margin:1%;
+            margin-left:10%;
+            margin-right:10%;
+        }
+        h4 {font-family:palatino;
+            font-size:20px;
+            margin:1%;
+            margin-left:10%;
+            margin-right:10%;
+        }
 
-    .profile {
-        border-radius: 50%;
-    }
-    @media only screen
-    and (min-device-width : 320px)
-    and (max-device-width : 480px){
-      #dropdown {display: inline;}
-      .mobileHide {display: none;}
-</style>
-<script type="text/javascript">
-window.onload = function ()
-{
-    dropdown = document.getElementById("dropdown");
-    dropdown_links = document.getElementById("dropdown-links");
-    dropdown.onclick = function ()
+        .profile {
+            border-radius: 50%;
+        }
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px){
+          #dropdown {display: inline;}
+          .mobileHide {display: none;}
+    </style>
+    <script type="text/javascript">
+    window.onload = function ()
     {
-        if (dropdown_links.style.display == "block"){
-            dropdown_links.style.display = "none"
+        dropdown = document.getElementById("dropdown");
+        dropdown_links = document.getElementById("dropdown-links");
+        dropdown.onclick = function ()
+        {
+            if (dropdown_links.style.display == "block"){
+                dropdown_links.style.display = "none"
+            }
+            else{
+                dropdown_links.style.display = "block"
+            }
+            return false;
         }
-        else{
-            dropdown_links.style.display = "block"
-        }
-        return false;
     }
-}
-</script>
+    </script>
 </head>
 <header> <center> <a class = "logo" href="index.html"> <img id = "logo"
     src="FinalLogo.png"> </a> </center> </header>
